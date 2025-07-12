@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swim England – UX Case Study</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="hero project-banner">
+      <div class="container nav-container">
+        <h1 class="site-title">Swim England – UX Case Study</h1>
+        <p class="tagline">UX Research & Usability Evaluation</p>
+      </div>
+      <div class="hamburger-nav">
+        <button class="hamburger-toggle" onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <div class="hamburger-menu" id="navLinks">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <a href="../index.html#about" onclick="toggleMenu()">About</a>
+        <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+        <a href="../index.html#experience" onclick="toggleMenu()">Experience</a>
+        <a href="../index.html#education" onclick="toggleMenu()">Education</a>
+        <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+        <a href="../index.html#contact" onclick="toggleMenu()">Contact</a>
+      </div>
+    </header>
+
+    <nav class="desktop-nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects" class="nav-link active">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <div class="back-to-portfolio-banner">
+      <a href="../index.html#projects">&larr; Back to Portfolio</a>
+    </div>
+
+    <div class="case-study-layout">
+      <aside class="toc-sidebar">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#goals">Project Goals</a></li>
+          <li><a href="#role">My Role</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#findings">Findings</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#outcome">Outcome</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+          <li><a href="#tools">Tools Used</a></li>
+        </ul>
+      </aside>
+
+      <main class="case-study-container">
+        <section class="project-title-section">
+          <p class="project-meta">
+            Client Project &middot; MSc HCI &middot; Feb–Mar 2025 &middot;
+            Tools: OBS Studio, Rainbow Spreadsheet, Excel
+          </p>
+          <p>
+            <a
+              href="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/INM315_Usability-Report.pdf?v=1750015312006"
+              target="_blank"
+              >📄 View Full Report (PDF)</a
+            >
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>
+            The Swim England UX case study presents a detailed usability
+            evaluation of Swim England’s official website. Conducted within the
+            scope of a university module, the project aimed to assess whether
+            users could easily navigate the site, locate essential services, and
+            understand its broader purpose.
+          </p>
+          <p>
+            The research employed moderated usability testing sessions with five
+            participants, covering key user journeys including volunteering,
+            coaching, learning to swim, and using the PoolFinder tool. Findings
+            were analyzed through structured qualitative methods, culminating in
+            actionable recommendations to improve navigation clarity, label
+            consistency, and overall user orientation.
+          </p>
+          <img
+            src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-05%20234750.png?v=1751755685692"
+            alt="Screenshot of the Swim England homepage showing navigation bars, homepage blocks, and the main banner"
+            style="
+              max-width: 100%;
+              margin: 1rem 0;
+              border-radius: 6px;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p class="image-caption">
+            The Swim England homepage as seen by users during the study. Key
+            elements like the PoolFinder and site purpose are not immediately
+            clear.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="goals">
+          <h2>Project Goals</h2>
+          <ol>
+            <li>
+              <strong>Evaluate homepage clarity and first impressions:</strong>
+              Understand whether the website immediately communicates its
+              purpose and target users.
+            </li>
+            <li>
+              <strong
+                >Assess navigation structure and key content discovery:</strong
+              >
+              Explore how easily users can find crucial information such as
+              volunteering, coaching, and events.
+            </li>
+            <li>
+              <strong
+                >Test the usability and discoverability of PoolFinder:</strong
+              >
+              Determine if users notice and understand the PoolFinder tool, and
+              if they find it useful.
+            </li>
+            <li>
+              <strong>Evaluate the Learn to Swim pathway experience:</strong>
+              Observe how different users find information on learning stages
+              and progression.
+            </li>
+          </ol>
+        </section>
+
+        <hr />
+
+        <section id="role">
+          <h2>My Role</h2>
+          <p>I led the end-to-end research process, including:</p>
+          <ul>
+            <li>Designing tasks aligned to evaluation goals</li>
+            <li>Recruiting and moderating 5 usability sessions</li>
+            <li>
+              Recording (OBS), transcribing (Otter.ai), and coding findings
+            </li>
+            <li>Building an affinity map and rainbow spreadsheet</li>
+            <li>Delivering a stakeholder-ready report</li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="methodology">
+          <h2>Methodology</h2>
+          <h3>Participants</h3>
+          <p>
+            5 casual swimmers with varied digital skills, given role-based tasks
+            (e.g., parent, teacher).
+          </p>
+          <h3>Task Design</h3>
+          <ul>
+            <li>1 exploratory task (homepage)</li>
+            <li>
+              6 scenario tasks (navigation, PoolFinder, Learn to Swim, etc.)
+            </li>
+          </ul>
+          <h3>Sample Tasks from Usability Script</h3>
+          <blockquote class="usability-script">
+            <p><strong>Q1 – Homepage Impressions</strong></p>
+            <ul>
+              <li>
+                Spend a few moments exploring the site. What do you think Swim
+                England does?
+              </li>
+              <li>Who do you think the website is aimed at?</li>
+              <li>How visually appealing do you find the homepage?</li>
+            </ul>
+
+            <p><strong>Q2 – Volunteering, Coaching, and Teaching</strong></p>
+            <ul>
+              <li>
+                You want to volunteer at swimming events. Find out how to
+                register your interest.
+              </li>
+              <li>
+                You want to become a swimming coach. Explore how to begin your
+                coaching journey.
+              </li>
+              <li>
+                You’re either a Level 1 swimming teacher wanting to advance to
+                Level 2, or a newcomer aiming for Level 1. Find the relevant
+                training path.
+              </li>
+              <li>
+                You’re an artistic swimmer interested in competing in an April
+                event. Locate details like date, location, and registration
+                steps.
+              </li>
+            </ul>
+
+            <p><strong>Q3 – PoolFinder</strong></p>
+            <ul>
+              <li>
+                You live in Shoreditch and want to find a local swimming pool
+                using PoolFinder.
+              </li>
+            </ul>
+
+            <p><strong>Q4 – Learn to Swim Pathway</strong></p>
+            <ul>
+              <li>
+                You’re an intermediate swimmer looking into diving or artistic
+                swimming classes.
+              </li>
+              <li>
+                You’re a parent seeking beginner-level swim classes for a
+                4-year-old.
+              </li>
+              <li>
+                Your child just completed stage 1 or 2. Find out what comes
+                next.
+              </li>
+            </ul>
+          </blockquote>
+
+          <h3>Setup</h3>
+          <ul>
+            <li>4 remote, 1 in-person session (30–45 mins)</li>
+            <li>Think-aloud protocol, recorded with OBS</li>
+          </ul>
+          <h3>Analysis</h3>
+          <p>
+            Annotations captured usability issues, successes, and general
+            feedback. An affinity map and rainbow spreadsheet were used.
+          </p>
+          <div class="image-center">
+            <img
+              src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-04%20140233.png?v=1751634518821"
+              alt="Rainbow Spreadsheet sample showing color-coded usability issues"
+            />
+            <p class="image-caption">
+              Rainbow Spreadsheet used to track and prioritize usability issues
+              across participants.
+            </p>
+          </div>
+        </section>
+
+        <hr />
+        <section id="findings">
+          <h2>Findings</h2>
+          <h3>Navigation & Findability</h3>
+          <ul>
+            <li>
+              Key information like volunteering or event registration was hard
+              to find
+            </li>
+            <li>“Useful Links” was often ignored or missed</li>
+            <li>Labels were misleading (“Awards” for Learn to Swim stages)</li>
+            <li>
+              Some participants found links via homepage blocks or ads, leading
+              to uncertainty about their reliability
+            </li>
+            <li>The menu lacked consistency and hierarchy</li>
+          </ul>
+
+          <div class="image-block">
+            <img
+              src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-06%20010142.png?v=1751760291946"
+              alt="Homepage: Teachers located in multiple places"
+            />
+            <p class="image-caption">
+              Navigation: “Teachers” links appear in multiple places, confusing
+              users.
+            </p>
+          </div>
+
+          <h3>PoolFinder Tool</h3>
+          <ul>
+            <li>
+              Users praised PoolFinder once they found it, calling it “the
+              easiest part of the site”
+            </li>
+            <li>
+              Major issue: it was hidden in the gray navigation bar and often
+              mistaken for a static banner
+            </li>
+            <li>Labels like “Regions” and “Operators” misled users</li>
+            <li>
+              Some assumed clickable tags weren’t interactive or vice versa
+            </li>
+          </ul>
+
+          <div class="image-block">
+            <img
+              src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-06%20010208.png?v=1751760296127"
+              alt="Upper navigation bar ignored"
+            />
+            <p class="image-caption">
+              PoolFinder: The upper navigation bar was ignored or mistaken as a
+              banner.
+            </p>
+          </div>
+
+          <div class="image-block">
+            <img
+              src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-06%20010223.png?v=1751760300913"
+              alt="Clickable tags misinterpreted"
+            />
+            <p class="image-caption">
+              PoolFinder: Some users didn’t realize tags were clickable due to
+              unclear visual cues.
+            </p>
+          </div>
+
+          <h3>Learn to Swim Pathway</h3>
+          <ul>
+            <li>Users struggled to find stage-specific information</li>
+            <li>
+              “Awards” was not a logical place to look for swim progression
+            </li>
+            <li>
+              Navigation structure subtly changed within the Learn to Swim
+              section, disorienting users
+            </li>
+          </ul>
+
+          <div class="image-block">
+            <img
+              src="https://cdn.glitch.global/95ff0a23-ceda-4ea7-bc80-635b1587dcac/Screenshot%202025-07-06%20010301.png?v=1751760308490"
+              alt="Learn to Swim hidden under Awards"
+            />
+            <p class="image-caption">
+              Learn to Swim: Users didn’t expect progression stages to be hidden
+              under “Awards.”
+            </p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section id="recommendations">
+          <h2>Recommendations</h2>
+          <p>
+            The final recommendations emerged directly from patterns observed
+            across multiple users and were supported by behavioral evidence in
+            the rainbow spreadsheet and annotated transcripts. These have been
+            expanded with clearer design intent and practical next steps:
+          </p>
+
+          <h3>Clarify Website Purpose and Audience</h3>
+          <p>
+            Several users misunderstood the site’s intent, assuming it was only
+            for beginners or parents. A clear homepage tagline such as:
+          </p>
+          <blockquote>
+            “Swim England: Supporting swimmers, parents, coaches, and clubs
+            across the UK.”
+          </blockquote>
+          <p>
+            would help users orient themselves immediately and reduce cognitive
+            load.
+          </p>
+
+          <h3>Streamline Navigation into a Single System</h3>
+          <p>
+            Issues stemmed from the presence of multiple menus (gray nav bar,
+            homepage tiles, “Useful Links”). Merge into one coherent structure
+            using dropdowns grouped by journey (e.g., “Start Swimming,”
+            “Volunteer,” “Train to Teach”).
+          </p>
+
+          <h3>Re-label Ambiguous or Misleading Menu Items</h3>
+          <p>
+            Terms like “Awards” failed to convey progression stages. Replace
+            with intuitive labels like “Swim Levels” or “Progression Stages.”
+            Remove duplicates like multiple “Teachers” links to reduce
+            confusion.
+          </p>
+
+          <h3>Signal Domain Transitions Clearly</h3>
+          <p>
+            Subtle changes in content and layout led to disorientation. Use
+            background color shifts, breadcrumb trails, or subtitle banners to
+            signal transitions between subdomains (e.g., “Learn to Swim”).
+          </p>
+
+          <p>
+            These enriched recommendations directly address the observed pain
+            points and are implementation-ready. In a real-world client context,
+            I would follow up with low-fidelity wireframes and stakeholder
+            testing to validate these ideas.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="outcome">
+          <h2>Outcome</h2>
+          <p>
+            This project was part of a Master's-level HCI module and approved
+            for external sharing with Swim England. It received strong feedback
+            for:
+          </p>
+          <ul>
+            <li>Clear planning and structured execution</li>
+            <li>Effective use of think-aloud and scenario-based testing</li>
+            <li>Detailed behavioral analysis tied to project goals</li>
+            <li>Well-organized and visually supported reporting</li>
+          </ul>
+          <p>
+            The tutor highlighted the depth of usability insights and praised
+            the report’s clarity. One area of improvement was the need for more
+            visual or design-driven recommendations, which I’ve since addressed
+            through this iteration.
+          </p>
+
+          <p>
+            This outcome reaffirmed my interest in UX research and strengthened
+            my ability to connect user insights to tangible design improvements.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="reflection">
+          <h2>Reflection</h2>
+          <p>
+            This case study was a pivotal experience that challenged me to
+            manage a full UX research pipeline. Key highlights include:
+          </p>
+
+          <h3>What Went Well</h3>
+          <ul>
+            <li>
+              <strong>Strategic test planning:</strong> Each task was aligned
+              with a research goal. Separating open-ended exploration from
+              functional tasks surfaced deeper insights.
+            </li>
+            <li>
+              <strong>Qualitative rigor:</strong> Manual coding, affinity
+              mapping, and the rainbow spreadsheet enabled me to extract themes
+              and validate issues across users.
+            </li>
+            <li>
+              <strong>User empathy:</strong> Scenarios reflected real Swim
+              England use cases, designed with inclusivity and clarity in mind.
+            </li>
+          </ul>
+
+          <h3>Areas to Improve</h3>
+          <ul>
+            <li>
+              Incorporating SUS scores or confidence ratings would enrich the
+              qualitative data with quantitative anchors.
+            </li>
+            <li>
+              Initial recommendations lacked visual fidelity. In future
+              iterations, I’ll supplement suggestions with mockups or annotated
+              wireframes.
+            </li>
+          </ul>
+
+          <p>
+            This project reinforced the importance of research that’s not only
+            methodical but also human-centered. It taught me that effective UX
+            isn’t just about identifying friction—it's about translating those
+            insights into clearer, kinder, more accessible experiences.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="tools">
+          <h2>Tools Used</h2>
+          <ul>
+            <li>OBS Studio</li>
+            <li>Otter.ai</li>
+            <li>Microsoft Excel</li>
+            <li>Miro for affinity map</li>
+            <li>Microsoft Word</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <button id="backToTopBtn" title="Back to top">&uarr;</button>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navLinks");
+        document.body.classList.toggle("menu-open");
+        menu.classList.toggle("show");
+      }
+      const topBtn = document.getElementById("backToTopBtn");
+      window.addEventListener("scroll", () => {
+        topBtn.style.display = window.scrollY > 600 ? "block" : "none";
+      });
+      topBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      window.addEventListener("resize", () => {
+        const menu = document.getElementById("navLinks");
+        if (window.innerWidth > 900) {
+          menu.classList.remove("show");
+          document.body.classList.remove("menu-open");
+        }
+      });
+    </script>
+    
+<script>
+  const tocLinks = document.querySelectorAll(".toc-sidebar a");
+  const sections = Array.from(tocLinks).map(link =>
+    document.querySelector(link.getAttribute("href"))
+  );
+
+  function updateTOC() {
+    let activeIndex = -1;
+
+    // Handle regular section scroll detection
+    sections.forEach((section, i) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 160 && rect.bottom > 160) {
+        activeIndex = i;
+      }
+    });
+
+    // If near top of page, default to first
+    if (activeIndex === -1 && window.scrollY < 100) {
+      activeIndex = 0;
+    }
+
+    // If near bottom of the page, highlight last section
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+      activeIndex = tocLinks.length - 1;
+    }
+
+    tocLinks.forEach(link => link.classList.remove("active"));
+    if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+  }
+
+  window.addEventListener("scroll", updateTOC);
+  window.addEventListener("load", updateTOC);
+  window.addEventListener("resize", updateTOC);
+</script>
+
+
+  </body>
+</html>
