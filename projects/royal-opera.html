@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inclusive Design – Royal Opera Accessibility Review</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.ico" />
+  <meta name="description"
+    content="Accessibility audit and inclusive design recommendations for the Royal Opera & Ballet website. UX case study for MSc HCI." />
+</head>
+
+<body>
+  <header class="hero project-banner">
+    <div class="container nav-container">
+      <h1 class="site-title">Royal Opera – Inclusive Design Audit</h1>
+      <p class="tagline">Accessibility Evaluation & Inclusive UX</p>
+    </div>
+  
+    <div class="hamburger-nav">
+      <button class="hamburger-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="hamburger-menu" id="navLinks">
+      <button class="close-btn" onclick="toggleMenu()">&times;</button>
+      <a href="../index.html#about" onclick="toggleMenu()">About</a>
+      <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+      <a href="../index.html#experience" onclick="toggleMenu()">Experience</a>
+      <a href="../index.html#education" onclick="toggleMenu()">Education</a>
+      <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+      <a href="../index.html#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <div class="back-to-portfolio-banner">
+    <a href="../index.html#projects">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="case-study-layout">
+    <aside class="toc-sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#goals">Project Goals</a></li>
+        <li><a href="#role">My Role</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#tools">Tools Used</a></li>
+      </ul>
+    </aside>
+
+    <main class="case-study-container">
+      <section class="project-title-section">
+        <p class="project-meta">
+          Client Project · MSc HCI · Feb–Mar 2025 · Tools: WAVE, NVDA, Lighthouse, Silktide
+        </p>
+
+        <a href="../../assets/files/ppt.pdf" target="_blank"
+          class="report-button-light">
+          🎞️ View Presentation (PPT)
+        </a>
+      </section>
+
+    <hr />
+
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        This client project focused on evaluating the accessibility of the Royal Opera House website, with a particular
+        emphasis on inclusive design for users with visual, auditory, motor, and cognitive impairments. By applying WCAG
+        2.2 Level A and AA guidelines, I aimed to uncover critical usability barriers and recommend practical
+        interventions that enhance access and usability for a broader audience.
+      </p>
+      <p>
+        I examined multiple journeys across desktop and mobile views, identifying 10 high-impact issues ranging from
+        poor focus visibility to the absence of alt text and missing skip links. The goal was to go beyond compliance,
+        considering real-world accessibility needs and proposing realistic, actionable changes.
+      </p>
+
+      <!-- Suggested Image Insert -->
+      <div class="image-block">
+        <img src="../../assets/images/homepage.png"
+          alt="Screenshot of the Royal Opera House homepage showing banners, navigation, and text layout" style="
+                max-width: 100%;
+                margin: 1rem 0;
+                border-radius: 6px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              " />
+        <p class="image-caption">
+          Homepage of the Royal Opera House website – part of the evaluation for accessibility across screen readers,
+          keyboard navigation, and layout responsiveness.
+        </p>
+      </div>
+    </section>
+
+
+    <hr />
+
+    <section id="goals">
+      <h2>Project Goals</h2>
+      <ol>
+        <li>
+          <strong>Evaluate the Royal Ballet & Opera website against WCAG 2.2 A and AA standards:</strong>
+          Use accessibility guidelines to assess compliance and real-world usability for users with disabilities.
+        </li>
+        <li>
+          <strong>Identify common and critical accessibility issues affecting diverse user groups:</strong>
+          Focus on visual, auditory, motor, and cognitive impairments to ensure broad inclusivity.
+        </li>
+        <li>
+          <strong>Use a combination of automated tools, screen readers, and manual inspection:</strong>
+          Cross-validate findings to uncover both technical and experiential barriers to access.
+        </li>
+        <li>
+          <strong>Translate accessibility findings into clear, actionable recommendations:</strong>
+          Provide realistic suggestions that could be adopted by the Royal Opera House digital team.
+        </li>
+        <li>
+          <strong>Raise awareness about inclusive design practices in a real-world cultural context:</strong>
+          Use this project to demonstrate how digital accessibility intersects with public service and cultural
+          engagement.
+        </li>
+      </ol>
+    </section>
+
+
+    <hr />
+
+    <section id="role">
+      <h2>My Role</h2>
+      <p>
+        I was responsible for conducting a comprehensive accessibility evaluation and delivering clear, actionable
+        outcomes for the client. My contributions included:
+      </p>
+      <ul>
+        <li>Conducting an accessibility audit across desktop and mobile views of multiple key pages</li>
+        <li>Running tests using tools like WAVE, Lighthouse, Silktide, PEAT, and NVDA</li>
+        <li>Performing manual HTML inspections to assess aria labels, heading structure, alt text, and keyboard
+          accessibility</li>
+        <li>Mapping all findings to WCAG 2.2 success criteria, with severity ratings and user impact explanations</li>
+        <li>Writing a detailed, client-ready presentation and preparing a supporting script to guide the walkthrough
+        </li>
+        <li>Designing inclusive solutions and providing rationale for prioritization and implementation feasibility</li>
+      </ul>
+    </section>
+
+
+    <hr />
+
+    <section id="methodology">
+      <h2>Methodology</h2>
+      <p>
+        This project followed a structured, tool-supported accessibility evaluation framework across multiple devices
+        and key pages.
+      </p>
+
+      <h3>Automated Testing</h3>
+      <ul>
+        <li>Used <strong>WAVE</strong> and <strong>Lighthouse</strong> to detect structural issues, contrast failures,
+          missing labels, and focus visibility problems</li>
+      </ul>
+
+      <h3>Manual Code Inspection</h3>
+      <ul>
+        <li>Inspected HTML and CSS manually to assess semantic markup, proper ARIA roles, heading hierarchy, and
+          keyboard trap risks</li>
+        <li>Checked for missing <code>alt</code> attributes, improper use of <code>aria-hidden</code>, and link/button
+          labeling</li>
+      </ul>
+
+      <h3>Assistive Technology Testing</h3>
+      <ul>
+        <li>Used <strong>NVDA screen reader</strong> to assess screen reader compatibility, logical reading order, and
+          keyboard accessibility</li>
+      </ul>
+
+      <h3>Simulation Tools</h3>
+      <ul>
+        <li>Used <strong>Silktide</strong> to simulate dyslexia, color blindness, and visual impairments to evaluate
+          layout clarity and content readability</li>
+        <li>Used <strong>PEAT</strong> to test for seizure-inducing flashing elements</li>
+      </ul>
+
+      <p>
+        All issues were categorized by WCAG 2.2 success criteria, with severity levels and real-world impact noted.
+        Results were organized into a presentation and summary table for stakeholder delivery.
+      </p>
+    </section>
+
+
+    <hr />
+    <section id="findings">
+      <h2>Findings</h2>
+      <p>
+        The accessibility evaluation revealed several critical issues that could significantly hinder usability for
+        users with visual, motor, auditory, or cognitive impairments. These findings were mapped to WCAG 2.2 A and AA
+        criteria, and categorized by severity and user impact.
+      </p>
+    
+      <ul>
+        <li><strong>Zooming limitations:</strong> The layout broke when zoomed in—menus and page elements disappeared or overlapped. This affects users with low vision, dyslexia, or those on small screens.</li>
+        <li><strong>Poor focus indicators:</strong> Focus outlines were low contrast or completely invisible (e.g., black on black), making it nearly impossible for keyboard-only users to navigate.</li>
+        <li><strong>Missing “Skip to Content” link:</strong> Users had to tab through repeated header content on every page, increasing physical and cognitive load.</li>
+        <li><strong>Unlabeled search icon and form:</strong> The search icon read as “icon” and the text field lacked a programmatic label—confusing for screen reader users and those using voice control.</li>
+        <li><strong>Missing video captions:</strong> Videos lacked captions and transcripts, making them inaccessible to deaf or hard-of-hearing users and difficult to follow in low-audio environments.</li>
+        <li><strong>Identical link text with different destinations:</strong> Some links used the same label but led to different pages, which disrupts screen reader navigation and increases ambiguity.</li>
+        <li><strong>Improper heading structure:</strong> Skipped heading levels and empty heading tags disrupted the semantic reading flow, affecting screen reader comprehension.</li>
+        <li><strong>Missing <code>alt</code> text:</strong> While most images were labeled, some meaningful content lacked descriptive <code>alt</code> attributes, making it invisible to screen readers.</li>
+        <li><strong>No <code>lang</code> attribute:</strong> The absence of a language tag caused incorrect pronunciation by screen readers and hindered accessibility for multilingual users.</li>
+      </ul>
+    
+      <div class="image-block">
+        <img src="https://cdn.glitch.global/your-link/RoyalOpera-AltText.png"
+          alt="Screenshot of an image lacking alt text on the Royal Opera website" />
+        <p class="image-caption">
+          Missing <code>alt</code> text: Decorative and informative images lacked descriptions for screen reader users.
+        </p>
+      </div>
+    
+      <div class="image-block">
+        <img src="https://cdn.glitch.global/your-link/RoyalOpera-Contrast.png"
+          alt="Contrast test results showing failed contrast ratios for text" />
+        <p class="image-caption">
+          Poor contrast: Several buttons and text links failed WCAG contrast ratio requirements.
+        </p>
+      </div>
+    
+      <div class="image-block">
+        <img src="https://cdn.glitch.global/your-link/RoyalOpera-FocusIndicator.png"
+          alt="Focus state barely visible around a navigation button" />
+        <p class="image-caption">
+          Focus visibility: Inconsistent focus states made navigation difficult for keyboard-only users.
+        </p>
+      </div>
+    </section>
+    
+
+    <hr />
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <p>
+        Based on the accessibility evaluation, the following improvements were proposed to address the most impactful
+        barriers for users with disabilities. Each recommendation is aligned with WCAG 2.2 standards and grounded in
+        inclusive design principles.
+      </p>
+
+      <h3>Add descriptive alternative text</h3>
+      <p>
+        Ensure all non-decorative images include meaningful <code>alt</code> attributes to support screen reader
+        interpretation and visual context for users with low vision.
+      </p>
+
+      <h3>Improve color contrast and visual clarity</h3>
+      <p>
+        Adjust foreground/background combinations, especially in navigation menus and CTAs, to meet minimum contrast
+        ratios (4.5:1 for normal text).
+      </p>
+
+      <h3>Introduce consistent and visible focus styles</h3>
+      <p>
+        Apply custom keyboard focus indicators across all interactive elements to support users navigating via keyboard
+        or assistive devices.
+      </p>
+
+      <h3>Add skip-to-content links</h3>
+      <p>
+        Implement skip links at the start of each page to allow users to bypass repetitive header content and reach main
+        content quickly.
+      </p>
+
+      <h3>Reorganize heading levels</h3>
+      <p>
+        Follow a logical and nested heading structure (e.g., H1 → H2 → H3) to improve page hierarchy comprehension for
+        screen reader users.
+      </p>
+
+      <h3>Label all form inputs and interactive components</h3>
+      <p>
+        Use programmatically associated labels (<code>label for</code> or <code>aria-label</code>) for all inputs,
+        buttons, and icons to improve screen reader usability.
+      </p>
+
+      <h3>Specify the language attribute in the HTML</h3>
+      <p>
+        Add <code>lang="en"</code> to the HTML tag to ensure proper pronunciation and localization for screen readers.
+      </p>
+
+      <p>
+        These recommendations are practical for implementation within existing CMS or development frameworks. In a
+        real-world client context, they could be supported with annotated screenshots and validation via stakeholder
+        feedback.
+      </p>
+    </section>
+
+
+    <hr />
+
+    <section id="outcome">
+      <h2>Outcome</h2>
+      <p>
+        The final presentation delivered to the client outlined ten core accessibility issues, each mapped to specific
+        WCAG 2.2 A and AA criteria. It clearly documented how these issues impact users with visual, motor, auditory,
+        and cognitive impairments.
+      </p>
+      <ul>
+        <li>Structured analysis aligned with accessibility standards</li>
+        <li>Realistic, low-disruption solutions tailored to the current site architecture</li>
+        <li>Use of simulations and screen reader testing to illustrate impact</li>
+        <li>Clear prioritization based on user impact, not just technical compliance</li>
+      </ul>
+      <p>
+        The project demonstrated how small, strategic changes—like consistent focus indicators or proper alt text—can
+        meaningfully improve access for underserved users. It also reinforced the importance of embedding inclusive
+        thinking into every stage of digital product development.
+      </p>
+    </section>
+
+
+    <hr />
+
+    <section id="reflection">
+      <h2>Reflection</h2>
+      <p>
+        This project deepened my understanding of accessibility as an essential part of the design process. It
+        strengthened my ability to evaluate digital experiences from the perspective of users facing real-world
+        barriers, and pushed me to communicate findings clearly and constructively.
+      </p>
+
+      <h3>What Worked Well</h3>
+      <ul>
+        <li><strong>Multi-layered evaluation:</strong> Combining automated tools, manual inspection, and screen reader
+          testing provided a holistic view of accessibility challenges.</li>
+        <li><strong>Alignment with WCAG:</strong> Mapping all findings to WCAG 2.2 A/AA standards helped communicate
+          severity and actionability to stakeholders.</li>
+        <li><strong>Empathy through simulation:</strong> Tools like Silktide and PEAT helped highlight issues beyond the
+          obvious, fostering more thoughtful recommendations.</li>
+      </ul>
+
+      <h3>What I’d Improve</h3>
+      <ul>
+        <li>Include direct usability testing with participants who have impairments to complement simulation-based
+          insights.</li>
+        <li>Prototype and test proposed fixes, even at low fidelity, to better evaluate feasibility and impact.</li>
+        <li>Explore mobile-specific accessibility nuances more deeply, especially for gesture-based interaction and
+          dynamic content.</li>
+      </ul>
+
+      <p>
+        Above all, this project reinforced that inclusive design isn’t about checking boxes—it’s about expanding access
+        and dignity for all users. Accessibility must be embedded from the start and treated as a creative,
+        human-centered practice.
+      </p>
+    </section>
+
+
+    <hr />
+
+    <section id="tools">
+      <h2>Tools Used</h2>
+      <ul>
+        <li><strong>WAVE</strong> – for detecting missing labels, contrast issues, and landmark errors</li>
+        <li><strong>Lighthouse</strong> – for automated accessibility audits and scoring</li>
+        <li><strong>NVDA</strong> – to evaluate screen reader compatibility, focus order, and aria-label use</li>
+        <li><strong>Silktide</strong> – to simulate cognitive and visual impairments like dyslexia and color blindness
+        </li>
+        <li><strong>PEAT</strong> – to assess flashing risks and photosensitive epilepsy compliance</li>
+        <li><strong>Chrome DevTools</strong> – for manual inspection of HTML structure and keyboard flows</li>
+        <li><strong>Google Docs</strong> – for drafting the report and presentation script</li>
+        <li><strong>Microsoft PowerPoint</strong> – to prepare the final client presentation</li>
+      </ul>
+    </section>
+
+
+    </main>
+  </div>
+
+  <button id="backToTopBtn" title="Back to top">&uarr;</button>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navLinks");
+      document.body.classList.toggle("menu-open");
+      menu.classList.toggle("show");
+    }
+    const topBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.scrollY > 600 ? "block" : "none";
+    });
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    window.addEventListener("resize", () => {
+      const menu = document.getElementById("navLinks");
+      if (window.innerWidth > 900) {
+        menu.classList.remove("show");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  </script>
+
+  <script>
+    const tocLinks = document.querySelectorAll(".toc-sidebar a");
+    const sections = Array.from(tocLinks).map(link =>
+      document.querySelector(link.getAttribute("href"))
+    );
+
+    function updateTOC() {
+      let activeIndex = -1;
+
+      // Handle regular section scroll detection
+      sections.forEach((section, i) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 160 && rect.bottom > 160) {
+          activeIndex = i;
+        }
+      });
+
+      // If near top of page, default to first
+      if (activeIndex === -1 && window.scrollY < 100) {
+        activeIndex = 0;
+      }
+
+      // If near bottom of the page, highlight last section
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+        activeIndex = tocLinks.length - 1;
+      }
+
+      tocLinks.forEach(link => link.classList.remove("active"));
+      if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+    }
+
+    window.addEventListener("scroll", updateTOC);
+    window.addEventListener("load", updateTOC);
+    window.addEventListener("resize", updateTOC);
+  </script>
+
+
+</body>
+
+</html>

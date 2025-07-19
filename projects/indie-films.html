@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swim England – UX Case Study</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="hero project-banner">
+    <div class="container nav-container">
+      <h1 class="site-title">Indie Film Platform – UX Case Study</h1>
+      <p class="tagline">Information Architecture & Wireframes</p>
+
+    </div>
+    <div class="hamburger-nav">
+      <button class="hamburger-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="hamburger-menu" id="navLinks">
+      <button class="close-btn" onclick="toggleMenu()">&times;</button>
+      <a href="../index.html#about" onclick="toggleMenu()">About</a>
+      <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+      <a href="../index.html#experience" onclick="toggleMenu()">Experience</a>
+      <a href="../index.html#education" onclick="toggleMenu()">Education</a>
+      <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+      <a href="../index.html#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <div class="back-to-portfolio-banner">
+    <a href="../index.html#projects">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="case-study-layout">
+    <aside class="toc-sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#goals">Project Goals</a></li>
+        <li><a href="#role">My Role</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#tools">Tools Used</a></li>
+      </ul>
+    </aside>
+
+    <main class="case-study-container">
+      <section class="project-title-section">
+        <p class="project-meta">
+          Independent Project · MSc HCI · Dec 2024 – Jan 2025 · Tools: Figma, Miro, draw.io, Google Docs
+        </p>
+        
+        <a href="../../assets/files/INM401-ElenaVergopoulou_Report.pdf" target="_blank" class="report-button-light">
+          📄 View Full Report (PDF)
+        </a>      
+      </section>
+
+      <hr />
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          This project involved designing the information architecture and key wireframes for an <strong>Indie Film
+            Platform</strong> that merges film discovery, crowdfunding, and events. Unlike existing platforms, this
+          concept aimed to support independent creators by offering visibility, community-building tools, and financial
+          support features under one roof.
+        </p>
+        <p>
+          The project focused on four core areas:
+        </p>
+        <ul>
+          <li>Discovering indie films</li>
+          <li>Viewing and supporting crowdfunding campaigns</li>
+          <li>Exploring filmmaker profiles and film events</li>
+          <li>Ensuring a seamless, intuitive user journey supported by strong IA</li>
+        </ul>
+        <p>
+          Through interviews, competitive benchmarking, tree testing, and iterative wireframing, I developed a platform
+          structure that reflected both filmmaker and viewer needs.
+        </p>
+        <div class="image-block">
+          <img src="../../assets/images/domain.png"
+            alt="Screenshot of domain model or sitemap for the Indie Film Platform" style="
+                max-width: 100%;
+                margin: 1rem 0;
+                border-radius: 6px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              " />
+          <p class="image-caption">
+            Early-stage domain model and sitemap showing platform structure across films, campaigns, profiles, and
+            events.
+          </p>
+        </div>
+      </section>
+
+
+      <hr />
+
+      <section id="goals">
+        <h2>Project Goals</h2>
+        <ol>
+          <li>
+            <strong>Design a clear and intuitive information architecture</strong> that reflects how real users would
+            browse and support indie films
+          </li>
+          <li>
+            <strong>Merge film discovery and crowdfunding</strong> into a unified user journey
+          </li>
+          <li>
+            <strong>Support diverse user needs</strong> – from casual browsers to active backers and filmmakers
+          </li>
+          <li>
+            <strong>Ensure content scalability</strong> with a modular navigation structure that supports campaigns,
+            profiles, and events
+          </li>
+        </ol>
+      </section>
+
+
+      <hr />
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>This was an individual project where I:</p>
+        <ul>
+          <li>Conducted interviews with a filmmaker, film student, and cinephile</li>
+          <li>Mapped out the domain model</li>
+          <li>Performed card sorting and tree testing to validate structure and labels</li>
+          <li>Designed the sitemap using hierarchical grouping and user logic</li>
+          <li>Created task-based user journeys reflecting realistic platform use cases</li>
+          <li>Developed four annotated wireframes for core pages: Discover Films, Film Details, Campaigns, and Events
+          </li>
+          <li>Conducted evaluation sessions to test terminology clarity, navigation structure, and result display
+            formats</li>
+        </ul>
+        <p>
+          My responsibilities spanned the full IA process—from early research and stakeholder interviews, to defining
+          domain relationships, testing navigation patterns, and iterating wireframes based on user feedback.
+        </p>
+      </section>
+
+
+      <hr />
+
+      <section id="methodology">
+        <h2>Methodology</h2>
+
+        <h3>Interviews & Domain Analysis</h3>
+        <p>
+          I interviewed three relevant stakeholders to identify real needs and mental models. These sessions revealed
+          the importance of <strong>events</strong> as community-building and discovery tools — leading me to promote
+          Events to a main navigation category.
+        </p>
+
+        <h3>Competitive Benchmarking</h3>
+        <p>
+          I analyzed platforms like <strong>IMDb</strong>, <strong>Letterboxd</strong>, and <strong>Kickstarter</strong>
+          to understand how established services structure content and guide users. Key takeaways included:
+        </p>
+        <ul>
+          <li><strong>Letterboxd:</strong> Strong filtering and search mechanisms</li>
+          <li><strong>Kickstarter:</strong> Clear crowdfunding communication and progress tracking</li>
+          <li><strong>IMDb:</strong> Dense but logically structured content layouts</li>
+        </ul>
+
+        <h3>IA Techniques</h3>
+        <ul>
+          <li><strong>Domain Model:</strong> Structured around core entities like films, campaigns, users, events, and
+            profiles</li>
+          <li><strong>Card Sorting & Tree Testing:</strong> Used to test labeling clarity and hierarchy for key user
+            actions</li>
+          <li><strong>Sitemap:</strong> Created using user-centered design principles and clarity heuristics (Morville &
+            Rosenfeld)</li>
+          <li><strong>User Journeys:</strong> Mapped realistic goal-based scenarios to define how different users would
+            navigate through discovery, support, and participation flows</li>
+        </ul>
+
+        <div class="image-block">
+          <img
+            src="../../assets/images/sitemap.png"
+            alt="Visual sitemap of the Indie Film Platform"
+            style="
+              max-width: 100%;
+              margin: 1rem 0;
+              border-radius: 6px;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p class="image-caption">
+            Sitemap structure illustrating main navigation categories like Discover, Campaigns, Events, and Profiles, built using insights from card sorting and tree testing.
+          </p>
+        </div>
+        
+        <div class="image-block">
+          <img
+            src="../../assets/images/userjourney.png"
+            alt="User journey map showing steps for discovering and backing a film"
+            style="
+              max-width: 100%;
+              margin: 1rem 0;
+              border-radius: 6px;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p class="image-caption">
+            User journey outlining the path from browsing indie films to backing a campaign and attending related events — with annotated steps reflecting viewer and creator goals.
+          </p>
+        </div>
+        
+      </section>
+
+      <hr />
+
+      <section id="findings">
+        <h2>Findings</h2>
+        <p>Key usability insights gathered from interviews, card sorting, and tree testing included:</p>
+        <ul>
+          <li>
+            <strong>Browsing preferences:</strong>
+            Users preferred discovering films through <strong>timeframes</strong> (e.g. “Recently Added,” “Classics”) and <strong>popularity</strong>,
+            rather than solely by genre.
+          </li>
+          <li>
+            <strong>Label clarity:</strong>
+            The original label “Channels” was ambiguous. Based on user feedback, it was changed to <strong>“Where to Watch”</strong>, which aligned
+            better with user expectations.
+          </li>
+          <li>
+            <strong>Pagination issues:</strong>
+            Participants found traditional pagination disruptive. A <strong>“Load More”</strong> button was introduced to preserve continuity
+            without overwhelming users.
+          </li>
+          <li>
+            <strong>Event structure:</strong>
+            Users navigated events more easily when grouped by <strong>recency</strong> — <strong>“Upcoming”</strong> and <strong>“Past”</strong> —
+            rather than by event type (e.g. festivals, workshops).
+          </li>
+        </ul>
+      </section>
+      
+
+      <hr />
+
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <p>
+          Based on IA testing and usability feedback, I developed the following actionable design improvements:
+        </p>
+        <ul>
+          <li>
+            <strong>Replace unclear labels with user-centered terms:</strong>
+            For example, <strong>“Channels” → “Where to Watch”</strong>, aligning with user expectations. All platform features were reviewed for naming clarity using card sorting insights to ensure terminology matched mental models.
+          </li>
+          <li>
+            <strong>Group events by recency, not type:</strong>
+            Users were overwhelmed by overlapping categories like “Workshops” and “Festivals.” Reorganizing the structure into <strong>“All Events,” “Upcoming,” and “Past”</strong> improved scannability and reduced decision fatigue.
+          </li>
+          <li>
+            <strong>Adopt ‘Load More’ instead of pagination or infinite scroll:</strong>
+            Traditional pagination disrupted browsing flow, while infinite scroll made users lose orientation. A <strong>“Load More”</strong> button provided a balanced way to reveal more content without performance or cognitive strain.
+          </li>
+          <li>
+            <strong>Introduce preview-rich popups for films:</strong>
+            Users wanted more context before clicking into a film page. I recommend adding <strong>hover-based preview cards</strong> or <strong>expandable popups</strong> to show summaries, cast, reviews, and campaign links at a glance.
+          </li>
+          <li>
+            <strong>Incorporate browsing-based recommendations:</strong>
+            To increase engagement, future versions could surface relevant films or events based on <strong>past views, visited categories, or support history</strong>.
+          </li>
+        </ul>
+      </section>
+      
+
+
+      <hr />
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          This project received strong feedback for its:
+        </p>
+        <ul>
+          <li><strong>Research depth</strong> (especially stakeholder interviews)</li>
+          <li><strong>Strategic use of card sorting and tree testing</strong> to validate IA decisions</li>
+          <li><strong>Clear structural diagrams</strong> and <strong>thoughtful labeling</strong> based on real user
+            input</li>
+          <li><strong>Realistic wireframes</strong> that balance discoverability with actionability</li>
+        </ul>
+        <p>
+          The IA and wireframe designs demonstrated how domain-specific insights can shape meaningful, user-friendly
+          product architecture. The final report was praised for its strong process documentation and alignment with
+          user-centered design principles.
+        </p>
+
+        <section id="wireframes">
+          <h2>Key Wireframes</h2>
+          <p>
+            Low-fidelity wireframes for the core user flows: film discovery, film details, campaign support, and event browsing.
+          </p>
+        
+          <div class="wireframe-block">
+            <img src="../../assets/images/w1.png" alt="Discover Films Wireframe" />
+            <p class="caption">Discover Films</p>
+          </div>
+        
+          <div class="wireframe-block">
+            <img src="../../assets/images/w2.png" alt="Film Details Wireframe" />
+            <p class="caption">Film Details</p>
+          </div>
+        
+          <div class="wireframe-block">
+            <img src="../../assets/images/w3.png" alt="Campaign Page Wireframe" />
+            <p class="caption">Campaign Page</p>
+          </div>
+        
+          <div class="wireframe-block">
+            <img src="../../assets/images/w4.png" alt="Events Page Wireframe" />
+            <p class="caption">Events Page</p>
+          </div>
+        </section>
+        
+        
+        
+        
+        
+        
+      </section>
+
+
+      <hr />
+
+      <section id="reflection">
+        <h2>Reflection</h2>
+        <p>
+          This project helped me develop and apply a solid information architecture methodology grounded in user
+          research and iterative design.
+        </p>
+        <h3>What I did well:</h3>
+        <ul>
+          <li>
+            <strong>Mapped a clear domain model</strong> based on real user input and competitor insights, ensuring the
+            structure reflected actual mental models
+          </li>
+          <li>
+            <strong>Created flexible structures</strong> that allow different user types (viewers, filmmakers, backers)
+            to achieve goals through multiple paths
+          </li>
+          <li>
+            <strong>Iterated based on feedback</strong> — adapting terminology, grouping navigation differently, and
+            adjusting layout styles to boost usability
+          </li>
+        </ul>
+
+        <h3>What I would improve:</h3>
+        <ul>
+          <li>
+            <strong>Conduct more usability testing</strong> on mid-fidelity wireframes, particularly around film
+            filtering logic and event discovery flows
+          </li>
+          <li>
+            <strong>Prototype the donation flow</strong> to test for friction in choosing contribution amounts and
+            establishing trust in campaign legitimacy
+          </li>
+          <li>
+            <strong>Explore accessibility affordances</strong> like keyboard navigation patterns, tab indexing, and
+            structured alt text for information-dense pages
+          </li>
+        </ul>
+
+        <p>
+          This project reinforced how <strong>user validation at every stage</strong> — from naming to navigation to
+          layout — drives stronger digital experiences. It also reminded me that clarity and hierarchy are not just IA
+          principles, but the foundation of inclusive, intuitive design.
+        </p>
+      </section>
+
+
+      <hr />
+
+      <section id="tools">
+        <h2>Tools Used</h2>
+        <ul>
+          <li><strong>Figma</strong> – for wireframing and layout exploration</li>
+          <li><strong>OptimalSort</strong> – for card sorting and tree testing</li>
+          <li><strong>Miro</strong> – for collaborative planning and early ideation</li>
+          <li><strong>Draw.io</strong> – for domain modeling, sitemaps, and user journeys</li>
+          <li><strong>Google Docs & Slides</strong> – for documentation and report writing</li>
+          <li><strong>OBS Studio</strong> – for recording interviews (where applicable)</li>
+        </ul>
+      </section>
+
+
+    </main>
+  </div>
+
+  <button id="backToTopBtn" title="Back to top">&uarr;</button>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navLinks");
+      document.body.classList.toggle("menu-open");
+      menu.classList.toggle("show");
+    }
+    const topBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.scrollY > 600 ? "block" : "none";
+    });
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    window.addEventListener("resize", () => {
+      const menu = document.getElementById("navLinks");
+      if (window.innerWidth > 900) {
+        menu.classList.remove("show");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  </script>
+
+  <script>
+    const tocLinks = document.querySelectorAll(".toc-sidebar a");
+    const sections = Array.from(tocLinks).map(link =>
+      document.querySelector(link.getAttribute("href"))
+    );
+
+    function updateTOC() {
+      let activeIndex = -1;
+
+      // Handle regular section scroll detection
+      sections.forEach((section, i) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 160 && rect.bottom > 160) {
+          activeIndex = i;
+        }
+      });
+
+      // If near top of page, default to first
+      if (activeIndex === -1 && window.scrollY < 100) {
+        activeIndex = 0;
+      }
+
+      // If near bottom of the page, highlight last section
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+        activeIndex = tocLinks.length - 1;
+      }
+
+      tocLinks.forEach(link => link.classList.remove("active"));
+      if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+    }
+
+    window.addEventListener("scroll", updateTOC);
+    window.addEventListener("load", updateTOC);
+    window.addEventListener("resize", updateTOC);
+  </script>
+
+
+</body>
+
+</html>

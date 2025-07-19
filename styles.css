@@ -16,11 +16,13 @@ body {
   background-color: var(--bg-light);
   color: var(--text-light);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body.menu-open {
   overflow: hidden;
 }
+
 
 
 .container {
@@ -916,4 +918,218 @@ html {
   .case-study-container h2 {
     font-size: 1.2rem;
   }
+}
+
+#wireframes {
+  padding: 2rem 0;
+}
+
+.wireframe-block {
+  border: 1px solid #1e3a8a; /* blue border */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.wireframe-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.wireframe-block .caption {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #374151;
+}
+
+.report-button-light {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f0f4f8;
+  color: #003366;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 1rem;
+}
+
+.report-button-light:hover {
+  background-color: #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-meta {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.journey {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.journey h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  display: inline-block;
+  border-bottom: 3px solid #5e5bff;
+}
+
+.journey-container {
+  overflow-x: auto;
+  padding: 1rem 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.journey-year {
+  font-size: 0.95rem;
+  color: #5e5bff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.journey-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.journey-item p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.journey-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 0 2rem;
+  align-items: stretch;
+}
+
+.journey-line::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.journey-item {
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  width: 300px;
+  z-index: 1;
+  margin-top: 24px; /* pushes card down so dot aligns to the line */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  flex: 1 1 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+
+}
+
+.journey-item .content {
+  margin-top: auto;
+}
+
+
+.journey-item:hover {
+  box-shadow: 0 6px 20px rgba(94, 91, 255, 0.2);
+}
+
+.journey-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #5e5bff;
+  border-radius: 50%;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #5e5bff;
+  z-index: 2;
+}
+
+.journey-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-header {
+  min-height: 100px; /* tweak this until all cards align well */
+}
+
+.journey-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+
+@media (max-width: 768px) {
+  .journey-line {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .journey-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+  }
+
+  .journey-item {
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .journey-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .journey-line,
+.journey-item,
+.journey-dot {
+  box-sizing: border-box;
+}
 }
