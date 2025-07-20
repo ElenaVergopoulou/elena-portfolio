@@ -1136,9 +1136,19 @@ html {
 
 .image-row {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
+
+.image-row img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
 
 .image-column {
   flex: 1;
