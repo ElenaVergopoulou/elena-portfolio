@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperial War Museum – Rocket Simulator UX Project</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="hero project-banner">
+    <div class="container nav-container">
+      <h1 class="site-title">Imperial War Museum – Rocket Simulator</h1>
+      <p class="tagline">UX Design · Interactive Exhibit · User Research</p>
+    </div>
+    <div class="hamburger-nav">
+      <button class="hamburger-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="hamburger-menu" id="navLinks">
+      <button class="close-btn" onclick="toggleMenu()">&times;</button>
+      <a href="../index.html#about" onclick="toggleMenu()">About</a>
+      <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+      <a href="../index.html#experience" onclick="toggleMenu()">Experience</a>
+      <a href="../index.html#education" onclick="toggleMenu()">Education</a>
+      <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+      <a href="../index.html#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <div class="back-to-portfolio-banner">
+    <a href="../index.html#projects">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="case-study-layout">
+    <aside class="toc-sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#goals">Project Goals</a></li>
+        <li><a href="#role">My Role</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#tools">Tools Used</a></li>
+      </ul>
+    </aside>
+
+    <main class="case-study-container">
+      <section class="project-title-section">
+        <p class="project-meta">
+          Collaborative Project · MSc HCI · Feb–Mar 2025 · Tools: Figma, Miro, OBS Studio, Canva
+        </p>
+
+
+        <a href="../assets/files/IMW-Report.pdf" target="_blank" class="report-button-light">
+          📄 View Full Report (PDF)
+        </a>
+
+      </section>
+
+      <hr />
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          The project aimed to enhance the visitor experience at the Imperial War Museum through the design of an
+          interactive kiosk focused on the V2 rocket exhibit. The final outcome was a <strong>Rocket Constructor and
+            Simulator</strong>—a sensory, educational, and interactive experience enabling users to explore the history
+          and evolution of rocket technology in a hands-on format.
+        </p>
+        <p>
+          The kiosk experience was shaped by mixed-methods user research, user-centered design principles, and iterative
+          prototyping. It combined passive and active learning modes to suit diverse visitor preferences, fostering
+          emotional and educational engagement through storytelling and environmental simulation.
+        </p>
+
+        <div class="image-center" style="margin-top: 1.5rem;">
+          <img src="../assets/images/poster.jpg" alt="Final Poster: Rocket Constructor Kiosk"
+            style="max-width: 600px; width: 100%; height: auto;">
+          <p class="image-caption">Final project poster summarizing the Rocket Constructor and Simulator concept.</p>
+        </div>
+
+
+      </section>
+
+
+      <hr />
+
+      <section id="goals">
+        <h2>Project Goals</h2>
+        <ol>
+          <li>
+            <strong>Enhance engagement in a historically significant but emotionally challenging exhibit:</strong>
+            Use interactivity to create meaningful and age-appropriate visitor experiences around the V2 rocket.
+          </li>
+          <li>
+            <strong>Encourage learning through active participation and storytelling:</strong>
+            Support visitor understanding by combining simulation, exploration, and narrative elements.
+          </li>
+          <li>
+            <strong>Balance sensory and informational design:</strong>
+            Offer both playful interaction and contemplative reflection to suit diverse visitor preferences.
+          </li>
+          <li>
+            <strong>Respect ethical boundaries:</strong>
+            Shift the focus from the V2 rocket’s destruction toward its technological evolution, avoiding glorification.
+          </li>
+          <li>
+            <strong>Align with museum constraints:</strong>
+            Design within physical, accessibility, and curatorial limitations of the Imperial War Museum.
+          </li>
+        </ol>
+      </section>
+
+
+      <hr />
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>As a UX Designer and Researcher, I contributed across multiple phases of the project, including:</p>
+        <ul>
+          <li>
+            Co-leading user research: conducting and analyzing introductory interviews, defining research questions, and
+            planning the methodology.
+          </li>
+          <li>
+            Conducting evaluation interviews: moderating usability tests, recording sessions, and synthesizing insights
+            to refine the interactive experience.
+          </li>
+          <li>
+            Curating kiosk content: shaping the educational narrative while maintaining emotional sensitivity.
+          </li>
+          <li>
+            Leading visual concept development: sketching interface ideas, designing the storyboard, and creating poster
+            visuals.
+          </li>
+          <li>
+            Writing and structuring the report: drafting core sections, editing collaboratively, and ensuring clarity
+            throughout.
+          </li>
+          <li>
+            Supervising user flow in prototypes: maintaining intuitive navigation and pacing within the interactive
+            experience.
+          </li>
+        </ul>
+      </section>
+
+
+
+      <hr />
+
+      <section id="methodology">
+        <h2>Methodology</h2>
+        <p>
+          The project followed a user-centered design process grounded in Design Thinking principles.
+        </p>
+
+        <div class="method-box">
+          <h3>Empathize</h3>
+          <ul>
+            <li>Naturalistic observations at the museum exhibit</li>
+            <li>Semi-structured interviews and a mini-focus group (7 participants total)</li>
+          </ul>
+          <div class="image-center">
+            <img src="../assets/images/v2rocket.jpg" alt="V2 rocket exhibit"
+              style="max-width: 400px; width: 100%; height: auto;">
+            <p class="image-caption">V2 Rocket exhibit in the Imperial War Museum.</p>
+          </div>
+        </div>
+
+        <div class="method-box">
+          <h3>Define</h3>
+          <ul>
+            <li>Identified visitor needs: immersive interaction, emotional resonance, educational clarity</li>
+            <li>Recognized challenges in balancing historical gravity with playful interactivity</li>
+          </ul>
+          <div class="image-center">
+            <img src="../assets/images/storyboard.jpg" alt="Storyboard illustrating the rocket exhibit interaction">
+          </div>
+          <p class="image-caption">
+            Storyboard used to visualize the visitor experience and guide the narrative structure of the
+            interactive kiosk.
+          </p>
+
+        </div>
+
+        <div class="method-box">
+          <h3>Ideate</h3>
+          <ul>
+            <li>
+              Created two personas:
+              <em>Curious Carl</em> a tech-savvy teen visiting with his family, drawn to interactive elements.
+              <em>Teaching Tom</em> a teacher guiding a school group, focused on structure, learning outcomes, and
+              accessibility.
+            </li>
+            <li>Mapped user flows for active (interactive) and passive (observational) learning pathways.</li>
+
+
+
+
+            <div class="image-row">
+              <img src="../assets/images/Carl.png" alt="Curious Carl persona">
+              <img src="../assets/images/Tom.png" alt="Teaching Tom persona">
+            </div>
+            <p class="image-caption">Personas captured user motivations and informed divergent user journeys.</p>
+        </div>
+
+        <div class="method-box">
+          <h3>Prototype: Lo-Fi Wireframes</h3>
+          <ul>
+            <li>Sketched interface concepts using Crazy 8s</li>
+            <li>Mapped layout logic and core interaction zones</li>
+          </ul>
+          <div class="image-center">
+            <img src="../assets/images/wireframes.png" alt="Lo-fi wireframes"
+              style="max-width: 600px; width: 100%; height: auto;">
+            <p class="image-caption">Low-fi wireframes helped establish the kiosk layout and flow.</p>
+          </div>
+        </div>
+
+        <div class="method-box">
+          <h3>Prototype: Final Prototype</h3>
+          <ul>
+            <li>Built a low-fidelity interactive prototype in Figma</li>
+            <li>Linked screens to simulate the narrative flow and touch interactions</li>
+          </ul>
+          <div class="image-row">
+            <div class="image-column">
+              <img src="../assets/images/prototype.png" alt="Rocket selection screen" />
+              <p class="image-caption">Rocket Selection</p>
+            </div>
+            <div class="image-column">
+              <img src="../assets/images/prototype2.png" alt="Rocket construction screen" />
+              <p class="image-caption">Rocket Build</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="method-box">
+          <h3>Test</h3>
+          <ul>
+            <li>Conducted moderated usability sessions with non-design participants</li>
+            <li>Collected feedback on interface clarity, narrative coherence, and interaction pacing</li>
+          </ul>
+        </div>
+
+        <div class="method-box">
+          <h3>Tools</h3>
+          <ul>
+            <li>Observation templates, interview guides</li>
+            <li>Affinity and empathy maps, “How Might We” prompts</li>
+            <li>Figma for wireframes and prototyping</li>
+            <li>Storyboarding sketching and Canva for poster </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <hr />
+      <section id="findings">
+        <h2>Findings</h2>
+
+        <h3>Immersive Experience</h3>
+        <ul>
+          <li>
+            Visitors strongly favored sensory features—citing earthquake or submarine simulators in other museums as
+            benchmarks.
+          </li>
+          <li>
+            Sound, vibration, and airflow were described as highly engaging, contributing to emotional immersion.
+          </li>
+        </ul>
+
+        <h3>Learning & Information Preferences</h3>
+        <ul>
+          <li>
+            Learning was a core driver for both children and adult visitors, especially in family groups.
+          </li>
+          <li>
+            Large blocks of static text were perceived as overwhelming and off-putting.
+          </li>
+          <li>
+            Users preferred structured content delivered through visual storytelling or guided progression.
+          </li>
+        </ul>
+
+        <h3>Interaction & Navigation</h3>
+        <ul>
+          <li>
+            The hands-on rocket construction phase was appreciated, but rigid drag-and-drop elements reduced enjoyment.
+          </li>
+          <li>
+            Visitors valued having control over the experience—being able to choose between passive (watching) and
+            active (building) paths.
+          </li>
+          <li>
+            Story-driven navigation was praised for making the content more memorable and accessible.
+          </li>
+        </ul>
+
+      </section>
+
+
+      <hr />
+
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <p>
+          The following recommendations emerged from observational research, interviews, and usability testing. They are
+          grounded in user feedback and aligned with inclusive, engaging design principles tailored for a museum
+          setting:
+        </p>
+
+        <h3>Increase Flexibility in Drag-and-Drop Interaction</h3>
+        <p>
+          Visitors found the Rocket Constructor engaging but occasionally restrictive. Introducing more freedom in
+          element placement and clearer feedback cues would improve enjoyment and encourage creative exploration.
+        </p>
+
+        <h3>Reduce Cognitive Load with Visual Aids</h3>
+        <p>
+          Replace dense text blocks with visual storytelling elements—icons, images, and progressive disclosure.
+          Chunking information and layering content would help users absorb key messages without feeling overwhelmed.
+        </p>
+
+        <h3>Improve Flow and Stage Transitions</h3>
+        <p>
+          Users occasionally lost context between construction, simulation, and reflection stages. Adding subtle
+          transition animations or audio prompts would help reinforce narrative continuity and reduce friction.
+        </p>
+
+        <h3>Enhance Visual and Sensory Design</h3>
+        <p>
+          Future iterations should include richer illustrations, subtle animations, and tactile feedback elements (e.g.,
+          sound, vibration) to elevate emotional engagement and replicate the positive reactions to sensory features in
+          other exhibits.
+        </p>
+
+        <h3>Expand Post-Visit Engagement Options</h3>
+        <p>
+          Allow users to print or email their custom rocket designs and offer donation prompts tied to educational
+          support. These actions would strengthen memory retention and visitor loyalty beyond the museum visit.
+        </p>
+
+        <p>
+          These recommendations were designed with scalability in mind and could be iterated through stakeholder
+          feedback, higher-fidelity prototyping, and continued user testing in a live exhibit environment.
+        </p>
+      </section>
+
+
+      <hr />
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          The final deliverable was a multi-stage interactive prototype designed for use in a museum kiosk. The Rocket
+          Constructor and Simulator experience included the following elements:
+        </p>
+        <ul>
+          <li>
+            <strong>Rocket Selection & Info Screen:</strong> Users explored 3D models of A/V-series rockets and accessed
+            contextual historical content.
+          </li>
+          <li>
+            <strong>Rocket Construction:</strong> A drag-and-drop interface allowed users to build rockets while
+            engaging with pop-up educational facts.
+          </li>
+          <li>
+            <strong>Sensory Launch Simulation:</strong> A multi-sensory experience including sound, vibration, and
+            airflow effects to simulate a rocket launch.
+          </li>
+          <li>
+            <strong>Print & Donate:</strong> Users could 3D print their custom rocket or donate to support museum
+            education initiatives.
+          </li>
+        </ul>
+        <p>
+          The prototype was well received by tutors and peers for its originality, emotional depth, and alignment with
+          museum constraints. It successfully met the project brief by delivering a hands-on, story-driven learning
+          experience grounded in user research and inclusive design principles.
+        </p>
+
+        <div class="prototype-button">
+          <a href="https://www.figma.com/proto/oWSwQuIvFipFkyHK5xRpPf/IXD-Final-Submission?pageid=0%3A1&node-id=4-3694&nodetype=canvas&viewport=948%2C752%2C0.04&t=u2PGyxaw0rMmXLUv1&scaling=scale-down&content-scaling=fixed"
+            target="_blank" rel="noopener noreferrer">
+            View Interactive Prototype
+          </a>
+        </div>
+
+      </section>
+
+      <hr />
+
+      <section id="reflection">
+        <h2>Reflection</h2>
+        <p>
+          This project deepened my understanding of how to balance emotional sensitivity with interactive design in
+          museum contexts. Designing around a weapon of war—while honoring both history and human impact—required
+          careful consideration in both tone and content.
+        </p>
+
+        <h3>What Went Well</h3>
+        <ul>
+          <li>
+            <strong>Applying ethical UX principles:</strong> We shifted the narrative focus from destruction to
+            technological evolution, encouraging respectful curiosity over spectacle.
+          </li>
+          <li>
+            <strong>Interdisciplinary collaboration:</strong> Working with teammates from diverse backgrounds enhanced
+            the experience design with varied pedagogical and emotional perspectives.
+          </li>
+          <li>
+            <strong>Visual storytelling:</strong> I led the creation of posters and storyboards that guided the user's
+            emotional and educational journey through the kiosk.
+          </li>
+        </ul>
+
+        <h3>Areas to Improve</h3>
+        <ul>
+          <li>
+            While the low-fidelity prototype validated the concept and flow, a higher-fidelity version would better
+            communicate visual design intentions and interactive depth.
+          </li>
+          <li>
+            Expanding accessibility testing—especially for users with sensory sensitivities—would strengthen inclusivity
+            in future iterations.
+          </li>
+          <li>
+            Adding personalization features such as a “memory booklet” or post-visit souvenir could enhance long-term
+            impact and engagement.
+          </li>
+        </ul>
+
+        <p>
+          Overall, this project showed me the power of storytelling as a tool for education and empathy. It pushed me to
+          think critically about how interactive media can inform, engage, and move people—especially in spaces where
+          history and emotion intersect.
+        </p>
+      </section>
+
+
+      <hr />
+
+      <section id="tools">
+        <h2>Tools Used</h2>
+        <ul>
+          <li><strong>Figma</strong> – for low-fidelity wireframes and interactive prototyping</li>
+          <li><strong>OBS Studio / Recording Tools</strong> – to capture user testing sessions and interviews</li>
+          <li><strong>Miro</strong> – for affinity mapping, empathy maps, and persona development</li>
+          <li><strong>Notion</strong> – for collaborative planning, research tracking, and content coordination</li>
+          <li><strong>Microsoft Word & PowerPoint</strong> – for drafting documentation and presenting final
+            deliverables</li>
+          <li><strong>Canva</strong> – for creating visual posters and storyboard assets</li>
+        </ul>
+      </section>
+
+
+    </main>
+  </div>
+
+  <button id="backToTopBtn" title="Back to top">&uarr;</button>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navLinks");
+      document.body.classList.toggle("menu-open");
+      menu.classList.toggle("show");
+    }
+    const topBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.scrollY > 600 ? "block" : "none";
+    });
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    window.addEventListener("resize", () => {
+      const menu = document.getElementById("navLinks");
+      if (window.innerWidth > 900) {
+        menu.classList.remove("show");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  </script>
+
+  <script>
+    const tocLinks = document.querySelectorAll(".toc-sidebar a");
+    const sections = Array.from(tocLinks).map(link =>
+      document.querySelector(link.getAttribute("href"))
+    );
+
+    function updateTOC() {
+      let activeIndex = -1;
+
+      // Handle regular section scroll detection
+      sections.forEach((section, i) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 160 && rect.bottom > 160) {
+          activeIndex = i;
+        }
+      });
+
+      // If near top of page, default to first
+      if (activeIndex === -1 && window.scrollY < 100) {
+        activeIndex = 0;
+      }
+
+      // If near bottom of the page, highlight last section
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+        activeIndex = tocLinks.length - 1;
+      }
+
+      tocLinks.forEach(link => link.classList.remove("active"));
+      if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+    }
+
+    window.addEventListener("scroll", updateTOC);
+    window.addEventListener("load", updateTOC);
+    window.addEventListener("resize", updateTOC);
+  </script>
+
+
+</body>
+
+</html>

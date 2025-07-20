@@ -55,11 +55,12 @@
               <em>Built my technical core in Electrical & Computer Engineering </em>
               <br>
               <br>
-              Gained interdisciplinary skills across software, hardware, and AI. Developed a dual-GAN system for emotional image generation in my thesis, setting the stage for later UX and HCI work.
+              Gained interdisciplinary skills across software, hardware, and AI. Developed a dual-GAN system for
+              emotional image generation in my thesis, setting the stage for later UX and HCI work.
             </p>
           </div>
         </div>
-    
+
         <div class="journey-item">
           <div class="journey-dot"></div>
           <div class="journey-content">
@@ -71,11 +72,12 @@
               <em>Bridged engineering and business through data and automation</em>
               <br>
               <br>
-              Worked across backend engineering, data analysis, and automation at Blueground, Deloitte, and Stonebranch. Led client-focused solutions and created tools for automation platforms and analytics dashboards.
+              Worked across backend engineering, data analysis, and automation at Blueground, Deloitte, and Stonebranch.
+              Led client-focused solutions and created tools for automation platforms and analytics dashboards.
             </p>
           </div>
         </div>
-    
+
         <div class="journey-item">
           <div class="journey-dot"></div>
           <div class="journey-content">
@@ -87,20 +89,21 @@
               <em>Postgraduate focus on inclusive UX research</em>
               <br>
               <br>
-              Conducted usability testing, co-designed educational tools, and led user research for inclusive design. Dissertation focuses on emotion recognition interfaces informed by expert interviews.
+              Conducted usability testing, co-designed educational tools, and led user research for inclusive design.
+              Dissertation focuses on emotion recognition interfaces informed by expert interviews.
             </p>
           </div>
         </div>
       </div>
     </section>
-    
-    
+
+
     <section id="projects" class="container">
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project">
           <h3>Swim England – UX Research</h3>
-          <p class="project-sub">Client Project · MSc HCI (2025)</p>
+          <p class="project-sub">Client Project · MSc HCI </p>
           <p>
             Led usability testing and thematic analysis for Swim England’s
             website. Delivered actionable insights and a rainbow spreadsheet
@@ -110,14 +113,26 @@
         </div>
 
         <div class="project">
+          <h3>Rocket Simulation – Museum Kiosk</h3>
+          <p class="project-sub">Group Project · MSc HCI</p>
+          <p>
+            Designed an interactive kiosk experience for the Imperial War Museum to engage visitors with the history of
+            the V2 rocket. Contributed to user research, content design, and prototyping.
+          </p>
+          <a href="projects/rocket-kiosk.html">View Case Study →</a>
+        </div>
+
+
+        <div class="project">
           <h3>Royal Opera – Inclusive Design Audit</h3>
           <p class="project-sub">Client Project · MSc HCI</p>
           <p>
-            Conducted an accessibility audit of the Royal Ballet & Opera website. Applied WCAG 2.2 standards and assistive tools to identify barriers and recommend inclusive design improvements.
+            Conducted an accessibility audit of the Royal Ballet & Opera website. Applied WCAG 2.2 standards and
+            assistive tools to identify barriers and recommend inclusive design improvements.
           </p>
           <a href="projects/royal-opera.html">View Case Study →</a>
         </div>
-        
+
 
         <div class="project">
           <h3>Indie Film Platform – IA & Wireframes</h3>
@@ -339,16 +354,16 @@
             </div>
 
             <div class="language-skill">
-              <div class="language-label">Spanish (B1)</div>
+              <div class="language-label">German (C1)</div>
               <div class="language-bar-container">
-                <div class="language-bar" style="width: 60%"></div>
+                <div class="language-bar" style="width: 80%"></div>
               </div>
             </div>
 
             <div class="language-skill">
-              <div class="language-label">German (C1)</div>
+              <div class="language-label">Spanish (B1)</div>
               <div class="language-bar-container">
-                <div class="language-bar" style="width: 80%"></div>
+                <div class="language-bar" style="width: 60%"></div>
               </div>
             </div>
           </div>
@@ -394,20 +409,20 @@
       menu.classList.toggle("show");
       body.classList.toggle("menu-open");
     }
-  
+
     document.addEventListener("click", function (event) {
       const menu = document.getElementById("navLinks");
       const hamburger = document.querySelector(".hamburger");
-  
+
       const clickedInsideMenu = menu.contains(event.target);
       const clickedHamburger = hamburger.contains(event.target);
-  
+
       if (!clickedInsideMenu && !clickedHamburger) {
         menu.classList.remove("show");
         document.body.classList.remove("menu-open");
       }
     });
-  
+
     window.addEventListener("resize", () => {
       const menu = document.getElementById("navLinks");
       if (window.innerWidth > 900) {
@@ -415,19 +430,19 @@
         document.body.classList.remove("menu-open");
       }
     });
-  
+
     document.addEventListener("DOMContentLoaded", () => {
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".desktop-nav a");
-  
+
       function onScroll() {
         let scrollPos = window.scrollY || window.pageYOffset;
-  
+
         sections.forEach((section) => {
           const offsetTop = section.offsetTop;
           const offsetHeight = section.offsetHeight;
           const id = section.getAttribute("id");
-  
+
           if (
             scrollPos >= offsetTop - 100 &&
             scrollPos < offsetTop + offsetHeight - 100
@@ -442,11 +457,11 @@
           }
         });
       }
-  
+
       window.addEventListener("scroll", onScroll);
     });
-  </script>  
-  
+  </script>
+
 
 </body>
 
