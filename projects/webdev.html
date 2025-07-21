@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IndieFlix – Front-End Web Development Project</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="hero project-banner">
+    <div class="container nav-container">
+      <h1 class="site-title">IndieFlix – Web Development Project</h1>
+      <p class="tagline">Responsive Design, Accessibility & UI Interactions</p>
+    </div>
+    <div class="hamburger-nav">
+      <button class="hamburger-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="hamburger-menu" id="navLinks">
+      <button class="close-btn" onclick="toggleMenu()">&times;</button>
+      <a href="../index.html#about" onclick="toggleMenu()">About</a>
+      <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+      <a href="../index.html#experience" onclick="toggleMenu()">Experience</a>
+      <a href="../index.html#education" onclick="toggleMenu()">Education</a>
+      <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+      <a href="../index.html#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects" class="nav-link active">Projects</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <div class="back-to-portfolio-banner">
+    <a href="../index.html#projects">&larr; Back to Portfolio</a>
+  </div>
+
+  <div class="case-study-layout">
+    <aside class="toc-sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#goals">Project Goals</a></li>
+        <li><a href="#role">My Role</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#tools">Tools Used</a></li>
+      </ul>
+    </aside>
+
+    <main class="case-study-container">
+      <section class="project-title-section">
+        <p class="project-meta">
+          Individual Project · MSc HCI · Feb–Mar 2025 · Tools: HTML, CSS, JavaScript, Glitch, DevTools
+        </p>
+
+        <div class="prototype-button">
+          <a href="https://elenavergopoulou.github.io/web-dev/" target="_blank" rel="noopener">
+            View Live Website
+          </a>
+        </div>
+
+
+      </section>
+
+      <hr />
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          IndieFlix is a mock responsive website developed as part of my MSc HCI coursework for the Web Design and
+          Development module. The platform simulates a discovery and crowdfunding site for independent films—allowing
+          users to browse indie films, support them via donation flows, and engage with related film events.
+        </p>
+        <p>
+          While the content was fictional and AI-generated, the project served as a practical testbed for front-end
+          development principles. It demonstrates my ability to design and build a fully functioning multi-page website
+          from scratch, with emphasis on layout, accessibility, responsive design, and dynamic interaction.
+        </p>
+
+        <img src="../assets/images/homepage-films.png"
+          alt="Homepage screenshot of the IndieFlix website showing the featured and soon to be released films" style="
+      max-width: 100%;
+      margin: 1rem 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    " />
+        <p class="image-caption">
+          Homepage screenshot of the IndieFlix website showing the featured and soon to be released films
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="goals">
+        <h2>Project Goals</h2>
+        <ol>
+          <li><strong>Demonstrate front-end skills:</strong> Build a responsive, accessible, multi-page site using HTML,
+            CSS, and JavaScript.</li>
+          <li><strong>Simulate real platform behavior:</strong> Include carousels, modals, filters, donation tracking,
+            and event subscriptions.</li>
+          <li><strong>Design for accessibility:</strong> Apply semantic HTML, keyboard navigation, alt text, and color
+            contrast guidelines.</li>
+          <li><strong>Create modular UI components:</strong> Reuse styled cards, buttons, and forms across different
+            pages.</li>
+          <li><strong>Enhance user engagement:</strong> Use visual features like hero sections, theme toggles, and
+            interactive feedback states.</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>This was an individual project. I was responsible for every stage of the build:</p>
+        <ul>
+          <li><strong>Information architecture & visual design:</strong> Defined layout structure, user flows, and
+            consistent UI components.</li>
+          <li><strong>Front-end development:</strong> Coded all interactions in vanilla JavaScript and styled the site
+            using CSS Flexbox and media queries.</li>
+          <li><strong>Interaction & form design:</strong> Developed the donation modal, search filters, subscription
+            form, and dark/light theme toggle.</li>
+          <li><strong>Accessibility implementation:</strong> Ensured semantic markup, alt attributes, tab order, and
+            focus/hover states.</li>
+          <li><strong>Content generation:</strong> Created placeholder film/event data using ChatGPT and DALL·E, in line
+            with coursework guidelines.</li>
+        </ul>
+      </section>
+
+
+      <hr />
+
+      <section id="methodology">
+        <h2>Methodology</h2>
+
+        <h3>Design-First Approach</h3>
+        <p>
+          The site was designed around a modular, mobile-first system. Components like film cards, carousels, modals,
+          and event blocks were reused across pages with consistent styling. The focus was on clarity, reusability, and
+          scalability.
+        </p>
+
+        <h3>Development Process</h3>
+        <ul>
+          <li>Used semantic HTML and responsive CSS (Flexbox & media queries)</li>
+          <li>Implemented interactive features with vanilla JavaScript (no frameworks)</li>
+          <li>Used <code>localStorage</code> for non-persistent client-side logic (e.g., donation flows)</li>
+        </ul>
+
+        <h3>Interaction Design</h3>
+        <ul>
+          <li>Built custom features: tab navigation, filters, carousels, countdowns, and modals</li>
+          <li>Form validation implemented with clear error messaging</li>
+          <li>Light/dark theme toggle with persistence across pages</li>
+        </ul>
+
+        <h3>Accessibility</h3>
+        <ul>
+          <li>Ensured keyboard navigation and logical tab order</li>
+          <li>Used appropriate alt text, ARIA roles, and semantic tags</li>
+          <li>Maintained WCAG-friendly color contrast in both light and dark themes</li>
+        </ul>
+
+        <h3>Testing</h3>
+        <p>
+          The site was tested throughout development on different devices and screen sizes. Manual checks included
+          layout scaling, tab navigation, form validation, and dynamic element behavior.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li>Responsive layout with Flexbox and media queries</li>
+          <li>Persistent dark/light mode toggle</li>
+          <li>Reusable content cards and consistent layout structure</li>
+          <li>Interactive homepage carousel with swipe and buttons</li>
+          <li>Dynamic filters and live search on Discover Films</li>
+          <li>Donation modal with validation and visual progress tracking</li>
+          <li>Accessible navigation with skip links and focus states</li>
+          <li>Event subscription form with user feedback and validation</li>
+        </ul>
+
+        <div class="wireframe-block">
+          <img src="../assets/images/dark-mode.png" alt="Homepage in dark mode">
+          <img src="../assets/images/light-mode.png" alt="Homepage in light mode">
+        </div>
+        <p class="image-caption">Comparison of IndieFlix homepage in dark and light themes.</p>
+      </section>
+      <!-- Filters on Discover Page -->
+      <div class="wireframe-block">
+        <img src="../assets/images/filters.png" alt="Discover Films page with filters applied"
+          style="max-width: 100%; border-radius: 6px;">
+        <p class="image-caption">Dynamic filters and live search allow users to browse films by genre or creator.</p>
+      </div>
+
+      <!-- Donation Modal -->
+      <div class="wireframe-block">
+        <img src="../assets/images/popup.png" alt="Pop-up donation modal for backing a film project"
+          style="max-width: 100%; border-radius: 6px;">
+        <p class="image-caption">Donation modal with real-time validation and visual progress tracking.</p>
+      </div>
+
+      <!-- Events Page -->
+      <div class="wireframe-block">
+        <img src="../assets/images/events.png" alt="Events page showcasing film-related activities"
+          style="max-width: 100%; border-radius: 6px;">
+        <p class="image-caption">Events page displaying upcoming screenings, festivals, and local happenings.</p>
+      </div>
+
+      <!-- Contact/Subscription Form -->
+      <div class="wireframe-block">
+        <img src="../assets/images/form.png" alt="Subscription form for email updates"
+          style="max-width: 100%; border-radius: 6px;">
+        <p class="image-caption">Contact form with validation and feedback to engage IndieFlix supporters.</p>
+      </div>
+      <hr />
+
+      <section id="findings">
+        <h2>Findings</h2>
+        <p>
+          Although the site was not tested with external users, self-evaluation and peer feedback revealed several
+          strengths:
+        </p>
+        <ul>
+          <li>Responsive layout worked well across desktop, tablet, and mobile</li>
+          <li>Homepage carousel and tabbed navigation enhanced user engagement</li>
+          <li>Filters and search created a seamless SPA-like experience without reloads</li>
+          <li>Browser history preserved context when navigating film details</li>
+          <li>Modals and forms provided clear feedback for interactions and errors</li>
+          <li>Theme toggle improved personalization and worked consistently</li>
+          <li>Accessibility features like tab order and alt text were effectively implemented</li>
+          <li>Form validation and content remained functional despite static data constraints</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+
+        <h3>Limitations & Improvements</h3>
+        <ul>
+          <li>No backend integration – all data is static or handled via <code>localStorage</code></li>
+          <li>No mobile-specific designs – while layouts scale, tailored mobile UIs would improve ergonomics</li>
+          <li>Basic form validation – lacks field-level checks, confirmation steps, or inline hints</li>
+          <li>Static film/event data – no CMS or content management functionality</li>
+        </ul>
+
+        <h3>Future Enhancements</h3>
+        <ul>
+          <li>Backend connection with user authentication and database (e.g. Firebase, MongoDB)</li>
+          <li>User profiles to save favorites, RSVPs, and donation history</li>
+          <li>Advanced filtering and recommendation logic for personalized discovery</li>
+          <li>Custom video player with playback controls</li>
+          <li>Live event updates and calendar integration with location services (e.g. Google Maps)</li>
+          <li>Full accessibility audit to ensure compliance beyond the basics</li>
+          <li>Review and commenting system for user engagement</li>
+          <li>Smoother transitions and animations for modals, carousels, and page changes</li>
+        </ul>
+      </section>
+
+
+      <hr />
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          Despite being a mock project, IndieFlix demonstrates real-world front-end design and development capabilities.
+          Key outcomes include:
+        </p>
+        <ul>
+          <li>A fully responsive, multi-page site with a consistent visual identity and modular components</li>
+          <li>Implementation of dynamic, client-side functionality including modal forms, filters, and donation progress
+            tracking</li>
+          <li>A balance of cinematic visuals (e.g. hero video, dark mode) and usability best practices (e.g. feedback
+            states, accessible markup)</li>
+          <li>A working simulation of a platform experience—guiding users from content discovery to support actions in a
+            seamless journey</li>
+        </ul>
+        <p>
+          Though not built for production, the project showcases how I plan, structure, and execute a user-centered
+          digital experience from scratch. It highlights both technical fluency and UX thinking.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="reflection">
+        <h2>Reflection</h2>
+        <p>
+          This project allowed me to blend creativity with technical implementation under an academic brief. Beyond
+          writing code, I had to think like a designer and an end user simultaneously.
+        </p>
+
+        <h3>What Went Well</h3>
+        <ul>
+          <li><strong>Structured design process:</strong> Translated high-level goals into modular components and
+            reusable layouts</li>
+          <li><strong>Client-side interaction design:</strong> Built responsive UI features—tabs, carousels,
+            modals—without external libraries</li>
+          <li><strong>Accessibility focus:</strong> Prioritized semantic HTML, skip links, tab navigation, and contrast
+            across themes</li>
+          <li><strong>Personalization & UX polish:</strong> Persistent theme toggles, visual feedback, and responsive
+            behavior enhanced the experience</li>
+        </ul>
+
+        <h3>Areas to Improve</h3>
+        <ul>
+          <li>Lacked backend integration—user actions were not persistently stored</li>
+          <li>No tailored mobile layouts—while responsive, spacing and interactions could be optimized further</li>
+          <li>Validation logic was functional but basic—future forms could include inline error states, confirmation
+            steps, and server-side checks</li>
+        </ul>
+
+        <p>
+          This case study strengthened my front-end development foundation and gave me the confidence to approach more
+          complex interaction patterns in the future. It also reinforced the importance of designing experiences that
+          feel polished even when built for simulation.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="tools">
+        <h2>Tools Used</h2>
+        <ul>
+          <li><strong>HTML5 / CSS3 / JavaScript (Vanilla):</strong> Core tech stack</li>
+          <li><strong>Glitch:</strong> IDE and live deployment environment</li>
+          <li><strong>Flexbox & Media Queries:</strong> Responsive design implementation</li>
+          <li><strong>localStorage:</strong> Simulated donation tracking and user state</li>
+          <li><strong>DALL·E / ChatGPT:</strong> AI-generated content and media assets</li>
+          <li><strong>Browser DevTools & Lighthouse:</strong> Manual and automated accessibility/testing checks</li>
+          <li><strong>Semantic HTML & ARIA roles:</strong> Accessibility support and keyboard navigation</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <button id="backToTopBtn" title="Back to top">&uarr;</button>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navLinks");
+      document.body.classList.toggle("menu-open");
+      menu.classList.toggle("show");
+    }
+    const topBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = window.scrollY > 600 ? "block" : "none";
+    });
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    window.addEventListener("resize", () => {
+      const menu = document.getElementById("navLinks");
+      if (window.innerWidth > 900) {
+        menu.classList.remove("show");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  </script>
+
+  <script>
+    const tocLinks = document.querySelectorAll(".toc-sidebar a");
+    const sections = Array.from(tocLinks).map(link =>
+      document.querySelector(link.getAttribute("href"))
+    );
+
+    function updateTOC() {
+      let activeIndex = -1;
+
+      // Handle regular section scroll detection
+      sections.forEach((section, i) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 160 && rect.bottom > 160) {
+          activeIndex = i;
+        }
+      });
+
+      // If near top of page, default to first
+      if (activeIndex === -1 && window.scrollY < 100) {
+        activeIndex = 0;
+      }
+
+      // If near bottom of the page, highlight last section
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+        activeIndex = tocLinks.length - 1;
+      }
+
+      tocLinks.forEach(link => link.classList.remove("active"));
+      if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+    }
+
+    window.addEventListener("scroll", updateTOC);
+    window.addEventListener("load", updateTOC);
+    window.addEventListener("resize", updateTOC);
+  </script>
+
+
+</body>
+
+</html>
